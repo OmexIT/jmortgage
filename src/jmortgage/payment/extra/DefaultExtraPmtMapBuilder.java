@@ -204,9 +204,7 @@ public final class DefaultExtraPmtMapBuilder implements ExtraPmtMapBuilder {
             }
         }
 
-        public void decrementCount() {
-            count--;
-        }
+        public void decrementCount() { count--; }
 
         @Override
         public String toString() {
