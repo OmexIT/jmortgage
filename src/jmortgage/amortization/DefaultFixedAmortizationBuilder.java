@@ -229,7 +229,7 @@ public final class DefaultFixedAmortizationBuilder implements FixedAmortizationB
     @Override
     public String toString() {
         return(new ToStringBuilder(this)
-                .append("mpc", pmtCalc)
+                .append("pmtCalc", pmtCalc)
                 .append("intervalInterestRate", intervalInterestRate)
                 .append("mthlyPmt", mthlyPmt)
                 .append("pmtKey", pmtKey)
@@ -246,7 +246,7 @@ public final class DefaultFixedAmortizationBuilder implements FixedAmortizationB
      * paid, the interest paid, the balance due after the payment, and the
      * cumulative interest paid after the payment.
      */
-    public class DefaultPayment implements FixedAmortizationBuilder.Payment {
+    public final class DefaultPayment implements FixedAmortizationBuilder.Payment {
 
         private final double total; // the total amount paid for this payment
         private final double principal; // the principal paid for this payment
