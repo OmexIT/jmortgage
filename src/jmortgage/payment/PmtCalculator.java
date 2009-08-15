@@ -11,10 +11,8 @@ package jmortgage.payment;
  * interest rate, loan amount, and length of mortgage term in years. The
  * interval between each payment is defined by {@link Interval}.
  *
+ * @since 1.0
  * @author David Armstrong
- *
- * @version 1.0
- *
  */
 public interface PmtCalculator {
 

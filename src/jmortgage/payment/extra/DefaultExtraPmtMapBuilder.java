@@ -20,8 +20,8 @@ import com.google.common.collect.ImmutableMap;
  * <tt>PmtKey</tt> it uses is immutable. <tt>DefaultPmtKey</tt> is immutable, so
  * if this object uses <tt>DefaultPmtKey</tt>, it is immutable and its thread
  * safety is guaranteed.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public final class DefaultExtraPmtMapBuilder implements ExtraPmtMapBuilder {
 

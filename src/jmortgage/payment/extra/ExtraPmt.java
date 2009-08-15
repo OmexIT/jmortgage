@@ -14,8 +14,8 @@ import jmortgage.amortization.PmtKey;
  * match exactly with the date of one of the regular mortgage payments. The
  * PmtKey also indicates the interval of the extra payment. Valid interval
  * values are Onetime, Yearly, Monthly, Biweekly, and Weekly.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public interface ExtraPmt {
 

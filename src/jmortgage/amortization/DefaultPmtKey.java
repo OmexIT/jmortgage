@@ -18,8 +18,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * for Amortization schedule maps. <tt>DefaultPmtKey</tt> also encapsulates an
  * <tt>Interval</tt> object which indicates the length of time between payment
  * due dates. This object is immutable, so thread safety is guaranteed.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public final class DefaultPmtKey implements PmtKey {
 

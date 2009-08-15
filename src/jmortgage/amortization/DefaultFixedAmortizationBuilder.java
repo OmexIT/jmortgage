@@ -30,8 +30,8 @@ import com.google.common.collect.ImmutableMap;
  * the buildAmortizationTable methods take <tt>Collection</tt> arguments that
  * represent extra payments and these objects may need to be synchronized to
  * guarantee their thread safety.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public final class DefaultFixedAmortizationBuilder implements FixedAmortizationBuilder {
 
@@ -340,6 +340,24 @@ public final class DefaultFixedAmortizationBuilder implements FixedAmortizationB
          * @return cumulative interest after payment unrounded
          */
         public double getCumulativeInterestUnrounded() { return cumulativeInterest; }
+
+        /**
+         * Gets the payment stats as an array of doubles. The stats are in the
+         * array in the following order: total, principal, interest, cumulative
+         * interest, and balance. All values are returned rounded.
+         * @return all payment stats in an array of doubles
+         * @since 1.1
+         */
+        public double[] getPmtStats() {
+
+            return new double[] {
+                new BigDecimal(total).setScale(2,RoundingMode.HALF_EVEN).doubleValue(),
+                new BigDecimal(principal).setScale(2,RoundingMode.HALF_EVEN).doubleValue(),
+                new BigDecimal(interest).setScale(2,RoundingMode.HALF_EVEN).doubleValue(),
+                new BigDecimal(cumulativeInterest).setScale(2,RoundingMode.HALF_EVEN).doubleValue(),
+                new BigDecimal(balance).setScale(2,RoundingMode.HALF_EVEN).doubleValue()
+            };
+        }
 
         /**
          * Returns a String representation of this object

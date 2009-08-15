@@ -30,9 +30,8 @@ import java.text.ParseException;
  * implementations of the JMortgage interfaces. Uses Apache's common collections
  * object {@link InstantiateFactory} to create objects via reflection.
  *
+ * @since 1.0
  * @author David Armstrong
- *
- * @version 1.0
  */
 public class JMortgageFactory {
 
