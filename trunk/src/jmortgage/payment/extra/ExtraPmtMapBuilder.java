@@ -11,8 +11,8 @@ import jmortgage.amortization.PmtKey;
 /**
  * Implementation of this interface builds an extra payment map based on the
  * <tt>PmtKey</tt> and the number of years for a mortgage term.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public interface ExtraPmtMapBuilder {
 

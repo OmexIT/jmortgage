@@ -12,8 +12,8 @@ import java.util.Calendar;
  * interval payment for a mortgage term. It is used when building an
  * implementation of {@link jmortgage.amortization.PmtKey} to determine how far
  * to increment subsequent payment keys.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public enum Interval {
 

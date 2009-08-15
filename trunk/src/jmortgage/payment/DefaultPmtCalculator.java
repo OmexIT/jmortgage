@@ -12,8 +12,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * The default implementation of <tt>PmtCalculator</tt>. This object calculates
  * a mortgage payment for the United States. This object is immutable, so its
  * thread safety is guaranteed.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public final class DefaultPmtCalculator implements PmtCalculator {
 

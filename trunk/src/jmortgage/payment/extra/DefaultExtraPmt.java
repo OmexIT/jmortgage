@@ -17,8 +17,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * implementation of <tt>PmtKey</tt> it uses is immutable. <tt>DefaultPmtKey</tt>
  * is immutable, so if this instance uses an implemntation of
  * <tt>DefaultPmtKey</tt>, its thread safety is guaranteed.
+ * @since 1.0
  * @author David Armstrong
- * @version 1.0
  */
 public final class DefaultExtraPmt implements ExtraPmt {
 

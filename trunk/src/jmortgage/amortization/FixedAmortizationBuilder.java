@@ -17,9 +17,8 @@ import java.util.List;
  * object that represents the date of the payment as the key and an object that
  * implements the {@link Payment} interface as the value.
  *
+ * @since 1.0
  * @author David Armstrong
- *
- * @version 1.0
  *
  */
 public interface FixedAmortizationBuilder {
@@ -104,6 +103,46 @@ public interface FixedAmortizationBuilder {
     public interface Payment {
 
         /**
+         * Constant value for the position of the total amount for a payment when
+         * calling DefaultFixedAmortizationBuilder.DefaultPayment's getPmtStats
+         * method.
+         * @since 1.1
+         */
+        public static final int TOTAL = 0;
+
+        /**
+         * Constant value for the position of the principal amount for a payment
+         * when calling DefaultFixedAmortizationBuilder.DefaultPayment's
+         * getPmtStats method.
+         * @since 1.1
+         */
+        public static final int PRINCIPAL = 1;
+
+        /**
+         * Constant value for the position of the interest amount for a payment when
+         * calling DefaultFixedAmortizationBuilder.DefaultPayment's getPmtStats
+         * method.
+         * @since 1.1
+         */
+        public static final int INTEREST = 2;
+
+        /**
+         * Constant value for the position of the cumulative interest amount for a
+         * payment when calling DefaultFixedAmortizationBuilder.DefaultPayment's
+         * getPmtStats method.
+         * @since 1.1
+         */
+        public static final int CUMULATIVE_INTEREST = 3;
+
+        /**
+         * Constant value for the position of the balance amount for a payment when
+         * calling DefaultFixedAmortizationBuilder.DefaultPayment's getPmtStats
+         * method.
+         * @since 1.1
+         */
+        public static final int BALANCE = 4;
+
+        /**
          * Gets the total amount paid for this payment
          * @return <tt>double</tt> The total amount of payment
          */
@@ -162,5 +201,12 @@ public interface FixedAmortizationBuilder {
          * @return <tt>double</tt> The cumulative interest paid.
          */
         public double getCumulativeInterestUnrounded();
+
+        /**
+         * Gets all the stats for the payment in an array of doubles
+         * @return <tt>double</tt> Array of payment stats
+         * @since 1.1
+         */
+        public double[] getPmtStats();
     }
 }

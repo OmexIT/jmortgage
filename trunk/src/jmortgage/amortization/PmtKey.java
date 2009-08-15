@@ -15,10 +15,8 @@ import jmortgage.payment.Interval;
  * calculate the first key and to calculate subsequent keys. Calculation of
  * subsequent keys is based on the interval value.
  *
+ * @since 1.0
  * @author David Armstrong
- *
- * @version 1.0
- *
  */
 public interface PmtKey {
 
