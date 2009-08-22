@@ -7,13 +7,7 @@ Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortga
 
 Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/pmi/DefaultPMICalculator.html DefaultPMICalculator] class.
 
-Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getPMICalculator(java.lang.Class) getPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
-
-Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getPMICalculator(java.lang.Class,%20java.lang.Class[],%20java.lang.Object[]) getPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
-
-Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getDefaultPMICalculator() getDefaultPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
-
-Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getDefaultPMICalculator(double,%20double,%20double) getDefaultPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
+Added methods to create PMICalculator implementations and DefaultPMICalculator instantiations in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
 
 == Changes ==
 Switched from ant build to maven2 build.
