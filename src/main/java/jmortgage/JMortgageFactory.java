@@ -23,7 +23,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.text.ParseException;
 
-
 /**
  * Factory class that builds implementations for all interfaces defined in
  * JMortgage. Uses reflection to build implementations. This ensures that
@@ -289,6 +288,7 @@ public class JMortgageFactory {
      * in number.
      * @param args The constructor arguments.
      * @return PMICalculator instantiation
+     * @since 1.2
      */
     public static PMICalculator getPMICalculator(Class instance, Class[] classes, Object[] args) {
 
@@ -302,6 +302,7 @@ public class JMortgageFactory {
      * @param instance  The class of the implementation of PMICalculator to
      * instantiate.
      * @return PMICalculator instantiation
+     * @since 1.2
      */
    public static PMICalculator getPMICalculator(Class instance) {
         return((PMICalculator)new InstantiateFactory(instance).create());
@@ -311,6 +312,7 @@ public class JMortgageFactory {
      * Convenience method for creating a {@link DefaultPMICalculator}.
      * @return PMICalculator instantiation, in this case,
      * DefaultPMICalculator
+     * @since 1.2
      */
     public static DefaultPMICalculator getDefaultPMICalculator() {
         return(new DefaultPMICalculator());
@@ -328,6 +330,7 @@ public class JMortgageFactory {
      * equal to 15 percent.
      * @return PMICalculator instantiation, in this case,
      * DefaultPMICalculator
+     * @since 1.2
      */
     public static DefaultPMICalculator getDefaultPMICalculator(double fivePctDivider, double tenPctDivider, double fifteenPctDivider) {
         return(new DefaultPMICalculator(fivePctDivider, tenPctDivider, fifteenPctDivider));
