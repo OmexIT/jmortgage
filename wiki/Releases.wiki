@@ -1,5 +1,27 @@
 = Release 1.2 =
 
+== New ==
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/pmi/package-summary.html pmi] package.
+
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/pmi/PMICalculator.html PMICalculator] interface.
+
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/pmi/DefaultPMICalculator.html DefaultPMICalculator] class.
+
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getPMICalculator(java.lang.Class) getPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
+
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getPMICalculator(java.lang.Class,%20java.lang.Class[],%20java.lang.Object[]) getPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
+
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getDefaultPMICalculator() getDefaultPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
+
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html#getDefaultPMICalculator(double,%20double,%20double) getDefaultPMICalculator] method in [http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/jmortgage/JMortgageFactory.html JMortgageFactory].
+
+== Changes ==
+Switched from ant build to maven2 build.
+
+[http://jmortgage.googlecode.com/files/jmortgage-1.2.tar.gz Download]
+
+[http://jmortgage.googlecode.com/svn/tags/release-1.2/site/apidocs/index.html API]
+
 = Release 1.1 =
 
 == New ==
