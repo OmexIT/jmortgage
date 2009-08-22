@@ -5,7 +5,7 @@
 = Release 1.1 =
 
 == New ==
-Added [http://jmortgage.googlecode.com/svn/tags/release-1.1/javadoc/jmortgage/amortization/FixedAmortizationBuilder.Payment.html#getPmtStats() getPmtStats] method definition to FixedAmortizationBuilder.Payment interface and DefaultFixedAmortizationBuilder.DefaultPayment's implementation of [http://jmortgage.googlecode.com/svn/tags/release-1.1/javadoc/jmortgage/amortization/DefaultFixedAmortizationBuilder.DefaultPayment.html#getPmtStats() getPmtStats].
+Added [http://jmortgage.googlecode.com/svn/tags/release-1.1/javadoc/jmortgage/amortization/FixedAmortizationBuilder.Payment.html#getPmtStats() getPmtStats] method definition to [http://jmortgage.googlecode.com/svn/tags/release-1.1/javadoc/jmortgage/amortization/FixedAmortizationBuilder.Payment.html FixedAmortizationBuilder.Payment] interface and [http://jmortgage.googlecode.com/svn/tags/release-1.1/javadoc/jmortgage/amortization/DefaultFixedAmortizationBuilder.DefaultPayment.html DefaultFixedAmortizationBuilder.DefaultPayment]'s implementation of [http://jmortgage.googlecode.com/svn/tags/release-1.1/javadoc/jmortgage/amortization/DefaultFixedAmortizationBuilder.DefaultPayment.html#getPmtStats() getPmtStats].
 
 [http://jmortgage.googlecode.com/files/JMortgage.1.1.tar.gz Download]
 
